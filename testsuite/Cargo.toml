@@ -1,0 +1,58 @@
+[package]
+edition = "2021"
+name = "testsuite"
+publish = false
+version = "0.0.0"
+
+[lib]
+harness = false
+
+[[test]]
+name = "adc"
+harness = false
+
+[[test]]
+name = "uart"
+harness = false
+
+[[test]]
+name = "rcc"
+harness = false
+
+[[test]]
+name = "spi"
+harness = false
+
+[[test]]
+name = "timer"
+harness = false
+
+[[test]]
+name = "gpio_input"
+harness = false
+
+[[test]]
+name = "gpio_output_push_pull"
+harness = false
+
+[[test]]
+name = "gpio_output_open_drain"
+harness = false
+
+[[test]]
+name = "gpio_input_puller"
+harness = false
+
+[[test]]
+name = "watchdog"
+harness = false
+
+[[test]]
+name = "signature"
+harness = false
+
+[dependencies]
+
+[features]
+# enable all defmt logging levels
+default = ["stm32f3xx-hal/stm32f303xc"]
